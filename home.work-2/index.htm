@@ -1,82 +1,88 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title> 
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h4 style="color: rgb(25, 124, 182);">BACK TO HOME</h4>
-            <h1 style="color: rgb(25, 124, 182);">SMART BANRING</h1>
-            <button class="btn1">LOGOUT</button>
-        </header>
-        <main class="main">
-          <section class="sec1">
-            <div class="pop">
-                <div>
-                    <img class="im" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5ucxkm85gt_XKZTvPCP29naA5DmxwicPYg&usqp=CAUя" alt="">
-                    <h4>kuti rysaliev</h4>
-                    <p>ven vpn</p>
-                </div>
-                <div>
-                    <h3>kutman</h3>
-                    <p>04.01.2007.</p>
-                    <button style="width: 90px; height: 30px; background-color: rgb(19, 69, 143); margin-top: 30px; color: white;">
-                        Change
-                    </button>
-                </div>
-               
-               
-    
-            </div>
-           
-            <div class="pop2">
-                <div class="po">
-                    <h3 style="color: rgb(41, 116, 214);">infomation</h3>
-                </div>
-                <div class="popp2">
-                    <div>
-                        
-                    <h2>Balans</h2>
-                    <h2>Type Acaunt</h2>
-                    <h1>TOTAL</h1>
-                    </div>
-                    <div>
-                        <h3>$30</h3>
-                        
-                        <h3 style="color: rgb(47, 140, 226);">USD</h3>
-                        <h1 style="color: rgb(47, 140, 226);" id="text-aout">0</h1>
-                    </div>
-                </div>
+    <style>
+        #login {
+            display: none;
+        }
+    </style> 
+</head> 
+<body> 
+    <div class="container"> 
+        <header> 
+            <h4 style="color: rgb(25, 124, 182);">BACK TO HOME</h4> 
+            <h1 style="color: rgb(25, 124, 182);">SMART BANRING</h1> 
+            <button class="btn1" id="log0ut">LOGOUT</button> 
+            <button class="btn1" id="login">Log-in</button>
+        </header> 
+        <main class="main"> 
+          <section class="sec1"> 
+            <div class="pop" id="user-info"> 
+                <div> 
+                    <img class="im" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5ucxkm85gt_XKZTvPCP29naA5DmxwicPYg&usqp=CAUя" alt=""> 
+                    <h4 id="user-lastName">kuti rysaliev</h4> 
+                    <p id="user-status">ven vpn</p> 
+                </div> 
+                <div> 
+                    <h3 id="user-name">kutman</h3> 
+                    <p id="user-name">04.01.2007.</p> 
+                    <button style="width: 90px; height: 30px; background-color: rgb(19, 69, 143); margin-top: 30px; color: white;"> 
+                        Change 
+                    </button> 
+                </div> 
                 
-
-                <button style="width: 200px; height: 30px; background-color: rgb(46, 146, 228); margin-left: 50px;">Detall</button>
-            </div>
+                
+     
+            </div> 
             
-          </section>
-          <section class="sec2">
-           <h1 style="color: rgb(26, 125, 206); margin-left: 20px; margin-top: 50px ;">PAYMENT</h1>
-           <p style="margin-left: 50px; margin-top: 10px;">Dac</p>
-           <input class="inp1" type="text">
-           <button id="plus">пополнить</button>
-           <br>
-           <input class="inp1" type="text">
-           <button ></button>
-           <br>
-           <input class="in1" type="text">
-           $
-           <input class="in2" type="text">
-           <button id="min" >оплатить</button>
-          </section>
-          <section class="sec3">
-            <img class="im2" src="https://www.vtb.by/sites/default/files/mir-02.png" alt="">
-        </section>
-        </main>
-    </div>
-   <script src="./aap.js"></script>
-</body>
+            <div class="pop2"> 
+                <div class="po"> 
+                    <h3 style="color: rgb(41, 116, 214);">infomation</h3> 
+                </div> 
+                <div class="popp2"> 
+                    <div> 
+                         
+                    <h2>Balans</h2> 
+                    <h2>Type Acaunt</h2> 
+                    <h1>TOTAL</h1> 
+                    </div> 
+                    <div> 
+                        <h3>$<span id="balance"> 0 </span></h3> 
+                         
+                        <h3 style="color: rgb(47, 140, 226);">USD</h3> 
+                        <h1 style="color: rgb(47, 140, 226);" id="textout">0</h1> 
+                    </div> 
+                </div> 
+                 
+ 
+                <button style="width: 200px; height: 30px; background-color: rgb(46, 146, 228); margin-left: 50px;">Detall</button> 
+            </div> 
+             
+          </section> 
+          <section class="sec2"> 
+           <h1 style="color: rgb(26, 125, 206); margin-left: 20px; margin-top: 50px ;">PAYMENT</h1> 
+           <p style="margin-left: 50px; margin-top: 10px;">Dac</p> 
+           <input class="inp1" type="text" id="add-input" placeholder="Enter balance"> 
+           <button id="plus">пополнить</button> 
+           <br> 
+           <input class="inp1" id="pere" type="text" placeholder="Enter get-balance"> 
+           <button id="perevod">перевод</button> 
+           <br> 
+           <input class="in1" type="text"> 
+           $ 
+           <input class="in2" type="text" id="minus-inp"> 
+           <button id="get-balance" >снять  деньги</button> 
+          </section> 
+          <section class="sec3"> 
+            <img class="im2" src="https://www.vtb.by/sites/default/files/mir-02.png" alt=""> 
+        </section> 
+        </main> 
+    </div> 
+   <script src="./aap.js"></script> 
+</body> 
 </html>
