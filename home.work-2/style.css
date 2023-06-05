@@ -72,8 +72,9 @@ header{
    
 }
 .in2{
-    width: 60px;
+    width: 207px;
     height: 30px;
+    margin-left: 20px ;
 }
 button{
     width: 100px;
@@ -89,8 +90,11 @@ button{
     box-shadow: 25px 25px 55px 10px;
 }
 .im2{
-    
+    width: 300px;
     margin-left: 30px;
     margin-top: 40px;
     box-shadow: 7px 7px 20px;
+}
+.sp{
+    margin-left: 20px;
 }

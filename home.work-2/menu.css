@@ -1,0 +1,70 @@
+.body1{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.hed{
+    position: relative;
+    width: 1200px;
+    height: 500px;
+    background-color: rgb(63, 102, 231);
+}
+.pi{
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 40px;
+    color: white;
+}
+.card{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    margin-left: 850px;
+    margin-top: 70px;
+}
+
+.in1{
+    width: 120px;
+    height: 5px;
+    margin: 10px;
+    margin-left: 23px;
+    margin-top: 10px;
+    padding: 18px;
+}
+.in2{
+    width: 120px;
+    height: 4px;
+    padding: 18px
+    
+}
+p{
+    margin-left: 30px;
+}
+.btn1{
+    width: 150px;
+    height: 30px;
+    margin-left: 90px;
+    margin-top: 20px;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(41, 102, 214);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.q1{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+img{
+    width: 100px;
+}
+.ti{
+    position: absolute;
+    color: white;
+    margin-top: 150px;
+    font-size: 20px;
+    margin-left: 50px;
+}

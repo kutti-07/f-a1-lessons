@@ -7,6 +7,7 @@ const inputAdd = document.getElementById('add-input')
 const btnMinus = document.getElementById('get-balance') 
 const inputMinus = document.getElementById('minus-inp') 
 const h1Textout = document.getElementById('textout')
+const btnVyiti = document.getElementById('vyiti')
  
  
  
@@ -18,7 +19,9 @@ btnPlus.onclick = () => {
     inputAdd.value = '' 
 }
 
-
+btnVyiti.onclick = () => {
+    
+}
 
 btnMinus.onclick = () => { 
     if(inputMinus.value >  Number(balance.innerText)){
